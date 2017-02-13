@@ -1,0 +1,22 @@
+---
+- hosts: all
+  connection: local
+
+  vars_prompt:
+      - name: "mas_email"
+        prompt: "Enter your AppleID Email:"
+      - name: "mas_password"
+        prompt: "Enter your AppleID Password:"
+        private: yes
+
+  roles:
+    - role: setup_homebrew
+    - role: setup_dotfiles
+      when: configure_dotfiles
+    - role: setup_mas
+      when: mas_installed_app_ids
+    - role: setup_terminal
+      when: configure_terminal
+    - role: setup_macos
+      when: configure_osx
+    - role: setup_ide

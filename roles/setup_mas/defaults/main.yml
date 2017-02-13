@@ -1,0 +1,8 @@
+---
+mas_email: ""
+mas_password: ""
+
+mas_installed_app_ids:
+  - 425424353 # The Unarchiver
+
+mas_upgrade_all_apps: no

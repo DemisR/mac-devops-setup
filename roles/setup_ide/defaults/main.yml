@@ -1,0 +1,20 @@
+---
+bin_dir: /usr/local/bin
+atom_upgrade_all: False
+atom_packages:
+  - language-ansible
+  - atom-beautify
+  - block-comment
+  - file-icons
+  - git-history
+  - git-log
+  - git-projects
+  - git-control
+  - language-generic-config
+  - language-nagios
+  - merge-conflicts
+  - open-recent
+  - markdown-writer
+  - pigments
+  - project-manager
+  - qulor

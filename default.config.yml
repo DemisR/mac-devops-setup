@@ -1,0 +1,88 @@
+---
+configure_terminal: yes
+configure_osx: yes
+configure_dotfiles: yes
+
+dotfiles_repo: https://github.com/DemisR/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_files:
+  - .aliases
+  - .zshrc
+  - .gitconfig
+  - .gitignore
+  - .vimrc
+  - .vim
+  - .osx
+  - .functions
+
+homebrew_installed_packages:
+  - openssl
+  - git
+  - tree
+  - httpie
+  - python
+  - python3
+  - sqlite
+  - nmap
+  - ssh-copy-id
+  - wget
+  - csshx
+  - whatmask
+  - knock
+  - netcat
+  # - freetds
+
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+  - homebrew/dupes
+  - homebrew/versions
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - docker
+  - dropbox
+  - google-chrome
+  - handbrake
+  - java
+  - licecap
+  - sequel-pro
+  - vagrant
+  - virtualbox
+  - vlc
+  - iterm2
+  - sourcetree
+  - postman
+  - atom
+  - intellij-idea
+  - qlcolorcode
+  - qlstephen
+  - qlmarkdown
+  - quicklook-json
+  - qlprettypatch
+  - quicklook-csv
+  - betterzipql
+  - qlimagesize
+  - webpquicklook
+  - suspicious-package
+  - spotify
+  - evernote
+  - postico
+  - sequel-pro
+  - skype-for-business
+  #- microsoft-office
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_app_ids:
+  - 425424353 # The Unarchiver (3.11.1)
+  - 425955336 # Skitch (2.8)
+  - 803453959 # Slack (2.4.1)
+  - 411246225 # Caffeine (1.1.1)
+  - 472226235 # LanScan (4.3)
+  - 443987910 # 1Password (6.5.3)
+  - 715768417 # Microsoft Remote Desktop (8.0.27246)
+
+#mas_email: ""
+#mas_password: ""
