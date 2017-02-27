@@ -1,0 +1,32 @@
+---
+- name: Check if iterm2 is installed
+  homebrew_cask:
+    name: "iterm2"
+    state: present
+    install_options: "appdir={{ homebrew_cask_appdir }}"
+    
+- name: Get current Solarized package
+    get_url: url=http://ethanschoonover.com/solarized/files/solarized.zip dest=~/Downloads/
+
+- name: Install iterm2 theme
+- name: Install fonts
+- name: Configure iterm2 profile
+
+- name: Installing zsh package
+  homebrew:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - zsh
+
+- name: Installing oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: "~/.oh-my-zsh"
+    update: yes
+  when: install_oh_my_zsh
+
+- name: Setting default shell
+  shell: "chsh -s $(which zsh) {{ ansible_ssh_user }}"
+  sudo: True
+  when: default_shell_zsh

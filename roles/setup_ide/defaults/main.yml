@@ -9,7 +9,7 @@ atom_packages:
   - git-history
   - git-log
   - git-projects
-  - git-control
+  - git-plus
   - language-generic-config
   - language-nagios
   - merge-conflicts

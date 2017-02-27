@@ -47,7 +47,7 @@ homebrew_cask_apps:
   - google-chrome
   - handbrake
   - java
-  - licecap
+  - kap
   - sequel-pro
   - vagrant
   - virtualbox
@@ -73,6 +73,7 @@ homebrew_cask_apps:
   - sequel-pro
   - skype-for-business
   #- microsoft-office
+  #- licecap
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:

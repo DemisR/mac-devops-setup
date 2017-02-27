@@ -94,7 +94,7 @@ brew cask install
         - git-history
         - git-log
         - git-projects
-        - git-control
+        - git-plus
         - language-generic-config
         - language-nagios
         - merge-conflicts
@@ -124,7 +124,7 @@ brew cask install
 - gitbook editor
 - iStumbler
 - Integrity
-- LICEcap
+- kap
 - macdown
 - MySQLWorkbentch
 - SerialTools

@@ -1,0 +1,5 @@
+homebrew_cask_appdir: /Applications
+# Change default shell to zsh
+default_shell_zsh: yes
+# Install oh my zsh
+install_oh_my_zsh: yes

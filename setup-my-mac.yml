@@ -2,12 +2,15 @@
 - hosts: all
   connection: local
 
+  vars_files:
+    - default.config.yml
+
   vars_prompt:
-      - name: "mas_email"
-        prompt: "Enter your AppleID Email:"
-      - name: "mas_password"
-        prompt: "Enter your AppleID Password:"
-        private: yes
+    - name: "mas_email"
+      prompt: "Enter your AppleID Email:"
+    - name: "mas_password"
+      prompt: "Enter your AppleID Password:"
+      private: yes
 
   roles:
     - role: setup_homebrew
