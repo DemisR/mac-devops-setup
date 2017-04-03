@@ -73,6 +73,7 @@ homebrew_cask_apps:
   - sequel-pro
   - skype-for-business
   - caffeine
+  - visual-studio-code
   #- microsoft-office
   #- licecap
 

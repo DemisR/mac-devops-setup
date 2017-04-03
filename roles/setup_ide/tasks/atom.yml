@@ -2,7 +2,7 @@
 - name: Assure Atom and Atom package manager (APM) are installed.
   command: which atom apm
   register: return_value
-  always_run: yes
+  check_mode: no
   failed_when: return_value.rc
   changed_when: False
 
