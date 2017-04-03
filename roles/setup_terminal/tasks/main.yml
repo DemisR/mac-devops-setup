@@ -8,9 +8,24 @@
 - name: Get current Solarized package
     get_url: url=http://ethanschoonover.com/solarized/files/solarized.zip dest=~/Downloads/
 
-- name: Install iterm2 theme
-- name: Install fonts
-- name: Configure iterm2 profile
+- name: Cloning fonts
+  git:
+    repo=https://github.com/powerline/fonts
+    dest=~/.config/powerlinefonts
+    accept_hostkey=yes
+  register: fontCloned
+  sudo: no
+
+- name: Install Fonts
+  shell: ~/.config/powerlinefonts/install.sh chdir=~/.config/powerlinefonts
+  when: fontCloned|success
+  sudo: no
+
+- name: iTerm custom settings file
+  osx_defaults:
+    domain: com.googlecode.iterm2
+    key: PrefsCustomFolder
+    string: "{{ ansible_env.PWD }}/roles/setup_terminal/files"
 
 - name: Installing zsh package
   homebrew:

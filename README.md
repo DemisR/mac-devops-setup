@@ -14,14 +14,16 @@ All commands are listed in [install.sh](install.sh)
     Note: If some Homebrew commands fail, you might need to agree to XCode's license or fix some other Brew issue. Run brew doctor to see if this is the case.
 
 ## Terminal setup
+
 - zsh
 - zsh-completions
 - oh-my-zsh
 - iterm2
-    - Solarized Dark theme
-    - font-inconsolata
+  - Solarized Dark theme
+  - font-inconsolata
 
 ## Utilities
+
 - python
 - pip
 - virtualenv
@@ -47,7 +49,8 @@ All commands are listed in [install.sh](install.sh)
 
 
 ### Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
-brew cask install
+
+- brew cask install
   - qlcolorcode
   - qlstephen
   - qlmarkdown
@@ -68,41 +71,41 @@ brew cask install
 - vagrant
 - virtualbox
 - intellij-idea
-    - config
+  - config
 - sourcetree
 - postman
 - dropbox
 - google-chrome
-    - Bookmarks
-    - ublock
-    - json viewer
-    - xmlviewer
-    - save to pocket
-    - evernote
-    - 1Password
-    - Xpath helper
+  - Bookmarks
+  - ublock
+  - json viewer
+  - xmlviewer
+  - save to pocket
+  - evernote
+  - 1Password
+  - Xpath helper
 
 
 - firefox dev
 - slack
 - atom
-    - Install shell command
-    - Packages:
-        - atom-beautify
-        - block-comment
-        - file-icons
-        - git-history
-        - git-log
-        - git-projects
-        - git-plus
-        - language-generic-config
-        - language-nagios
-        - merge-conflicts
-        - open-recent
-        - markdown-writer
-        - pigments
-        - project-manager
-        - qulor
+  - Install shell command
+  - Packages:
+    - atom-beautify
+    - block-comment
+    - file-icons
+    - git-history
+    - git-log
+    - git-projects
+    - git-plus
+    - language-generic-config
+    - language-nagios
+    - merge-conflicts
+    - open-recent
+    - markdown-writer
+    - pigments
+    - project-manager
+    - qulor
 - spotify
 - outlook
 - ms-office
@@ -116,6 +119,7 @@ brew cask install
 
 
 ### Optionals
+
 - Dbeaver
 - Filezilla
 - coconut battery
@@ -142,14 +146,19 @@ brew cask install
 
 
 ## MacOS settings
+
 ### Show icons for hard drives, servers, and removable media on the desktop
+
 defaults write com.apple.finder ShowExternalHardDrivesOnDesktop -bool true
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
+
 ### Avoid creating .DS_Store files on network volumes
+
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 ## Personal soft and setup
+
 - PWmanager scripts
 
 ### VPN setup
@@ -164,9 +173,11 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 
 ## Testing the Playbook
+
 Use Mac virtualbox https://github.com/geerlingguy/macos-virtualbox-vm
 
 ## Links
+
 https://blog.vandenbrand.org/2016/01/04/how-to-automate-your-mac-os-x-setup-with-ansible/
 http://www.nickhammond.com/automating-development-environment-ansible/
 https://github.com/simplycycling/ansible-mac-dev-setup/blob/master/main.yml
