@@ -6,20 +6,24 @@
     install_options: "appdir={{ homebrew_cask_appdir }}"
     
 - name: Get current Solarized package
-    get_url: url=http://ethanschoonover.com/solarized/files/solarized.zip dest=~/Downloads/
+  get_url: 
+    url: "http://ethanschoonover.com/solarized/files/solarized.zip" 
+    dest: "~/Downloads/"
 
 - name: Cloning fonts
   git:
-    repo=https://github.com/powerline/fonts
-    dest=~/.config/powerlinefonts
-    accept_hostkey=yes
+    repo: "https://github.com/powerline/fonts"
+    dest: "~/.config/powerlinefonts"
+    accept_hostkey: yes
   register: fontCloned
-  sudo: no
+  become: no
 
 - name: Install Fonts
-  shell: ~/.config/powerlinefonts/install.sh chdir=~/.config/powerlinefonts
+  shell: ~/.config/powerlinefonts/install.sh 
+  args: 
+    chdir: '~/.config/powerlinefonts'
   when: fontCloned|success
-  sudo: no
+  become: no
 
 - name: iTerm custom settings file
   osx_defaults:
@@ -43,5 +47,5 @@
 
 - name: Setting default shell
   shell: "chsh -s $(which zsh) {{ ansible_ssh_user }}"
-  sudo: True
+  become: True
   when: default_shell_zsh
