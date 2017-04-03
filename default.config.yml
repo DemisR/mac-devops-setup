@@ -87,3 +87,4 @@ mas_installed_app_ids:
 
 #mas_email: ""
 #mas_password: ""
+install_oh_my_zsh: True
