@@ -72,6 +72,7 @@ homebrew_cask_apps:
   - postico
   - sequel-pro
   - skype-for-business
+  - caffeine
   #- microsoft-office
   #- licecap
 
@@ -80,7 +81,6 @@ mas_installed_app_ids:
   - 425424353 # The Unarchiver (3.11.1)
   - 425955336 # Skitch (2.8)
   - 803453959 # Slack (2.4.1)
-  - 411246225 # Caffeine (1.1.1)
   - 472226235 # LanScan (4.3)
   - 443987910 # 1Password (6.5.3)
   - 715768417 # Microsoft Remote Desktop (8.0.27246)
