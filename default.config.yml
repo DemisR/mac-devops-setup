@@ -74,6 +74,7 @@ homebrew_cask_apps:
   - skype-for-business
   - caffeine
   - visual-studio-code
+  - go2shell
   #- microsoft-office
   #- licecap
 
