@@ -18,3 +18,20 @@ atom_packages:
   - pigments
   - project-manager
   - qolor
+
+vscode_packages:
+  - DavidAnson.vscode-markdownlint
+  - HookyQR.beautify
+  - PeterJausovec.vscode-docker
+  - akamud.vscode-theme-onedark
+  - donjayamanne.python
+  - emilast.LogFileHighlighter
+  - file-icons.file-icons
+  - haaaad.ansible
+  - jasonn-porch.gitlab-mr
+  - magicstack.MagicPython
+  - ms-vscode.PowerShell
+  - robertohuertasm.vscode-icons
+  - tht13.python
+  - wholroyd.jinja
+  - yzane.markdown-pdf

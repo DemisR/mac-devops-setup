@@ -1,0 +1,6 @@
+{
+    "workbench.iconTheme": "file-icons",
+    "workbench.colorTheme": "Atom One Dark",
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.fontFamily": "Inconsolata for Powerline"
+}
