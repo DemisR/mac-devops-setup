@@ -31,6 +31,7 @@ homebrew_installed_packages:
   - whatmask
   - knock
   - netcat
+  - sshuttle
   # - freetds
 
 
@@ -75,6 +76,7 @@ homebrew_cask_apps:
   - caffeine
   - visual-studio-code
   - go2shell
+  - filezilla
   #- microsoft-office
   #- licecap
 

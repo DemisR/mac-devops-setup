@@ -13,19 +13,18 @@
 [ ]	Clone GIt repositories (#TODO: add list and script for automatic setup)
 [ ]	Setup database Portico config (CMDB)
 [ ]	Sourcetree repository config
+[ ] Configure and enable go2shell
 
 ## Optionals app
 [ ]	Add app Integrity for check websites 
 [ ]	visualvm + config (Java JMX)
 [ ]	ActiveMQ tools
 [ ]	HAwtio
-[ ]	SerialTools ?
+[ ]	SerialTools
 [ ]	FTP client
 [ ]	Camunda modeler
 [ ]	Archi app
-[ ]	Gitbook editor?
+[ ]	Gitbook editor
 [ ]	Dbeaver
-[ ]	http://vagrantmanager.com/
-[ ]	https://github.com/onmyway133/FinderGo
-[ ]	sshshutle
+[ ]	vagrantmanager
 
