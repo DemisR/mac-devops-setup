@@ -21,17 +21,30 @@ atom_packages:
 
 vscode_packages:
   - DavidAnson.vscode-markdownlint
+  - DotJoshJohnson.xml
+  - DougFinke.vscode-pandoc
+  - EditorConfig.EditorConfig
   - HookyQR.beautify
+  - PKief.material-icon-theme
   - PeterJausovec.vscode-docker
   - akamud.vscode-theme-onedark
+  - donjayamanne.githistory
   - donjayamanne.python
   - emilast.LogFileHighlighter
   - file-icons.file-icons
   - haaaad.ansible
   - jasonn-porch.gitlab-mr
+  - jebbs.plantuml
+  - jgsqware.gitlab-ci-templates
+  - lukehoban.Go
   - magicstack.MagicPython
+  - mdickin.markdown-shortcuts
+  - mrmlnc.vscode-apache
   - ms-vscode.PowerShell
-  - robertohuertasm.vscode-icons
+  - redhat.vscode-yaml
+  - shanoor.vscode-nginx
+  - spywhere.guides
   - tht13.python
+  - wayou.vscode-todo-highlight
   - wholroyd.jinja
   - yzane.markdown-pdf

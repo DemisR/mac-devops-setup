@@ -1,6 +1,17 @@
 {
     "workbench.iconTheme": "file-icons",
-    "workbench.colorTheme": "Atom One Dark",
+    "workbench.colorTheme": "One Dark Pro",
     "vsicons.dontShowNewVersionMessage": true,
-    "terminal.integrated.fontFamily": "Inconsolata for Powerline"
+    "terminal.external.osxExec": "iTerm.app",
+    "terminal.integrated.fontFamily": "Inconsolata for Powerline",
+    "files.associations": {
+        "*.log.*": "log"
+    },
+    "material-icon-theme.showUpdateMessage": false,
+    "editor.minimap.enabled": false,
+    "editor.renderWhitespace": "none",
+    "editor.renderControlCharacters": false,
+    "editor.multiCursorModifier": "alt",
+    "window.zoomLevel": 0,
+    "git.confirmSync": false
 }
