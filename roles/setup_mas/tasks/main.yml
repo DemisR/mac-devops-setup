@@ -1,6 +1,8 @@
 ---
 - name: Ensure MAS is installed.
-  homebrew: name=mas state=present
+  homebrew: 
+    name: mas
+    state: present
 
 - name: Get MAS account status
   shell: 'mas account'

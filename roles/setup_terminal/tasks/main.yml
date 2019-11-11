@@ -10,8 +10,6 @@
     url: "http://ethanschoonover.com/solarized/files/solarized.zip" 
     dest: "~/Downloads/"
 
-# TODO instlla solarized dark on iTerm
-
 - name: Cloning fonts
   git:
     repo: "https://github.com/powerline/fonts"

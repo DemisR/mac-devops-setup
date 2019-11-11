@@ -17,23 +17,39 @@ dotfiles_files:
   - .functions
 
 homebrew_installed_packages:
-  - openssl
+# Dev
   - git
-  - tree
+  - go
   - httpie
+  - jq
+  - jmeter
+  - maven
   - python
   - python3
   - sqlite
+  - phantomjs
+# Shell Utilities 
+  - coreutils
+  - tree
+  - csshx
+  - fzf
+  - knock
+  - whatmask
+  - wget
   - nmap
   - ssh-copy-id
-  - wget
-  - csshx
-  - whatmask
-  - knock
-  - netcat
-  - sshuttle
-  # - freetds
-
+  - openssl
+  - pandoc
+  - telenet
+# Cloud
+  - aws-iam-authenticator
+  - bat
+  - azure-cli
+  - eksctl
+# DevOps
+  - kubernetes-cli
+  - kubernetes-helm
+  - terraform
 
 homebrew_taps:
   - homebrew/core
@@ -43,21 +59,41 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - docker
-  - dropbox
+# Messaging and co.
+  - slack
+  - skype-for-business
+  - station
+# Browsers
   - google-chrome
-  - handbrake
-  - java
+  - firefox
+# Utilities
+  - 1password
+  - vlc
   - kap
-  - sequel-pro
+  - spotify
+  - caffeine
+  - filezilla
+  - dropbox
+  - mas
+  - the-unarchiver
+  #- microsoft-office
+  #- licecap
+  #- handbrake
+# DevOps tools
+  - docker
   - vagrant
   - virtualbox
-  - vlc
-  - iterm2
+# Dev environment
+  - java
+  - node
   - sourcetree
   - postman
-  - atom
   - intellij-idea
+  - visual-studio-code
+# Databases
+  - sequel-pro
+  - postico
+# Quick look plugins
   - qlcolorcode
   - qlstephen
   - qlmarkdown
@@ -67,27 +103,61 @@ homebrew_cask_apps:
   - betterzipql
   - qlimagesize
   - webpquicklook
-  - suspicious-package
-  - spotify
-  - evernote
-  - postico
-  - sequel-pro
-  - skype-for-business
-  - caffeine
-  - visual-studio-code
-  - go2shell
-  - filezilla
-  #- microsoft-office
-  #- licecap
+  - go2shell # Opens a terminal window to the current directory in Finder.
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
-  - 425424353 # The Unarchiver (3.11.1)
-  - 425955336 # Skitch (2.8)
-  - 803453959 # Slack (2.4.1)
-  - 472226235 # LanScan (4.3)
-  - 443987910 # 1Password (6.5.3)
-  - 715768417 # Microsoft Remote Desktop (8.0.27246)
+  - 425955336 # Skitch
+  - 472226235 # LanScan
+  - 1295203466 # Microsoft Remote Desktop
+  - 1362171212 # Caffeinated
 
 #mas_email: ""
 #mas_password: ""
+
+vscode_packages:
+  - vscoss.vscode-ansible # Ansible 
+  - mrmlnc.vscode-apache # Apache config
+  - shanoor.vscode-nginx # NGinx config
+  - HookyQR.beautify # Beautify code
+  - CoenraadS.bracket-pair-colorizer-2 # Colorizing matching brackets
+  - eamodio.gitlens # Supercharge Git 
+  - fatihacet.gitlab-workflow # Gitlab workflow integration
+  - akamud.vscode-theme-onedark # Theme
+  - file-icons.file-icons #Icons
+  - bmaupin.copy-without-formatting # Copy without formatting
+  - caarlos0.language-prometheus # Syntax highlight and snippets for Prometheus'
+  - christian-kohler.npm-intellisense # Autocomplete npm
+  - christian-kohler.path-intellisense # Autocompletes filenames
+  - DotJoshJohnson.xml # ML formatting
+  - EditorConfig.EditorConfig # EditorConfig Support
+  - eg2.vscode-npm-script # npm support
+  - esbenp.prettier-vscode # Prettier 
+  - formulahendry.code-runner # Run code from vscode
+  - Gruntfuggly.todo-tree # Show Todo Fixme 
+  - johnpapa.angular-essentials # Essential extensions for Angular developers
+  - johnpapa.Angular2 # Angular
+  - mauve.terraform # Terraform
+  - Mikael.Angular-BeastCode # Angular
+  - mitchdenny.ecdc # Encode and decode text selections
+  - ms-azuretools.vscode-docker # Linting for Dockerfile and docker-compose files
+  - ms-kubernetes-tools.vscode-kubernetes-tools # Kubernetes
+  - ms-python.python # Python
+  - ms-vscode.azure-account # Azure
+  - ms-vscode.azurecli # Azure
+  - ms-vscode.Go # Go lang
+  - ms-vscode.vscode-typescript-tslint-plugin # TSLint support 
+  - ms-vsliveshare.vsliveshare # Real-time collaborative development
+  - msjsdiag.debugger-for-chrome # Debugger for Chrome
+  - mtxr.sqltools # Database management
+  - natewallace.angular2-inline
+  - nhoizey.gremlins # Reveals some characters that can be harmful because they are invisible or looking like legitimate ones
+  - quicktype.quicktype # Copy JSON, paste as Go, TypeScript, C#, C++ and more
+  - redhat.vscode-yaml # Yaml language support
+  - samuelcolvin.jinjahtml # Syntax highlighting for jinja
+  - spywhere.guides # Guide lines
+  - tht13.python # Python language
+  - vilicvane.sensitive-replace # Sensitive replace
+  - VisualStudioExptTeam.vscodeintellicode # AI-assisted development
+  - wayou.vscode-todo-highlight # highlight TODOs, FIXMEs, and any keywords, annotation
+  - yzane.markdown-pdf # Convert Markdown to PDF
