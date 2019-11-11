@@ -4,7 +4,7 @@ This ansible playbook install and setup most of softwares and utilities for my D
 
 ## 🚥 Installation 
 
-First of all  clone or download this repository on you mac.
+First of all clone or download this repository on you mac.
 
 After that you need to do some things to install prerequisites.
 
@@ -14,7 +14,7 @@ After that you need to do some things to install prerequisites.
 - Updating OSX
 - Installing Xcode Command Line Tools
 
-More easilly you can just execute script [install.sh](install.sh) that include all commands for install prerequisites.
+More easily, you can simply run the [install.sh](install.sh) script which includes all commands for the installation prerequisites.
 
 _Note: If some Homebrew commands fail, you might need to agree to XCode's license or fix some other Brew issue. Run brew doctor to see if this is the case._
 
@@ -83,11 +83,11 @@ Use Mac virtualbox https://github.com/geerlingguy/macos-virtualbox-vm
 
 ## See also
 
-https://blog.vandenbrand.org/2016/01/04/how-to-automate-your-mac-os-x-setup-with-ansible/
-http://www.nickhammond.com/automating-development-environment-ansible/
-https://github.com/simplycycling/ansible-mac-dev-setup/blob/master/main.yml
-https://github.com/mas-cli/mas
-https://github.com/geerlingguy/mac-dev-playbook
-https://github.com/osxc
-https://github.com/MWGriffin/ansible-playbooks/blob/master/sourcetree/sourcetree.yaml   
-https://github.com/sindresorhus/quick-look-plugins
+- https://blog.vandenbrand.org/2016/01/04/how-to-automate-your-mac-os-x-setup-with-ansible/
+- http://www.nickhammond.com/automating-development-environment-ansible/
+- https://github.com/simplycycling/ansible-mac-dev-setup/blob/master/main.yml
+- https://github.com/mas-cli/mas
+- https://github.com/geerlingguy/mac-dev-playbook
+- https://github.com/osxc
+- https://github.com/MWGriffin/ansible-playbooks/blob/master/sourcetree/sourcetree.yaml   
+- https://github.com/sindresorhus/quick-look-plugins
