@@ -16,9 +16,10 @@ After that you need to do some things to install prerequisites.
 
 More easilly you can just execute script [install.sh](install.sh) that include all commands for install prerequisites.
 
-    Note: If some Homebrew commands fail, you might need to agree to XCode's license or fix some other Brew issue. Run brew doctor to see if this is the case.
+_Note: If some Homebrew commands fail, you might need to agree to XCode's license or fix some other Brew issue. Run brew doctor to see if this is the case._
 
 For enabling some options and setup alias etc. I clone my dot files repo ( `.zshrc`,`.aliases`,`.gitignore_global`,...).
+
 Of course you can use yours changing `dotfiles_repo` variable in `default.config.yml` file.
 
 ## 🚀 Usage
@@ -37,6 +38,7 @@ You can customize setup editing `default.config.yml` config file.
 The complete list of softwares installed is in `default.config.yml` , but in summary here what the playbook do.
 
 - Install homebrew and cask and install applications, utilities and quick look plugins. 
+
     Docker, Vagrant, slack, 1password, postman,...
 
 - Clone my dotfile from github repository.
@@ -44,10 +46,12 @@ The complete list of softwares installed is in `default.config.yml` , but in sum
 - Install mas (Mac App Store command line interface)
 
 - Configure terminal
+
     Install iTerm2 (Solarized Dark theme, font-inconsolata)
     Install Zsh and configure options with oh-my-zsh
 
 - Configure Mac OS 
+
     Show icons for hard drives, servers, and removable media on the desktop
     Avoid creating .DS_Store files on network volumes
     Finder: show status bar
@@ -55,6 +59,7 @@ The complete list of softwares installed is in `default.config.yml` , but in sum
     Save screenshots to the Desktop/Screenshots folder
 
 - Install VScode and lot of plugins.
+
     Ansible, Yaml, Golang, Kubernetes, Terraform,...
 
 ## Improuvements
@@ -62,6 +67,7 @@ The complete list of softwares installed is in `default.config.yml` , but in sum
 Configure iTerm2 Profile with Solarized theme.
 
 Install Goolge Chrome extensions
+
 - Adblock Plus
 - 1Password extension
 - Grammarly for Chrome
