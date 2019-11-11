@@ -62,7 +62,7 @@ The complete list of softwares installed is in `default.config.yml` , but in sum
 
     Ansible, Yaml, Golang, Kubernetes, Terraform,...
 
-## Improuvements
+## Improvements
 
 Configure iTerm2 Profile with Solarized theme.
 

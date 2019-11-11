@@ -73,6 +73,7 @@ homebrew_cask_apps:
   - spotify
   - caffeine
   - filezilla
+  #- cyberduck
   - dropbox
   - mas
   - the-unarchiver
