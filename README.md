@@ -58,23 +58,12 @@ The complete list of softwares installed is in `default.config.yml` , but in sum
     Save screenshots in PNG format
     Save screenshots to the Desktop/Screenshots folder
 
-- Install VScode and lot of plugins.
-
-    Ansible, Yaml, Golang, Kubernetes, Terraform,...
+- Install VScode and plugins (check `vscode_packages` list )
 
 ## Improvements
 
 Configure iTerm2 Profile with Solarized theme.
-
-Install Goolge Chrome extensions
-
-- Adblock Plus
-- 1Password extension
-- Grammarly for Chrome
-- JSON Viewer
-- JWT Analyzer & Inspector
-- save to pocket
-
+Add config for sync settings VScode and Brave
 Configure VPN
 
 ## Testing the Playbook

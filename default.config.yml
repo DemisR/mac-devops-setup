@@ -18,92 +18,98 @@ dotfiles_files:
 
 homebrew_installed_packages:
 # Dev
-  - git
+  # *** Java ***
+  - jenv # Manage your Java environment
+  - jmeter # Load testing and performance measurement application
+  - maven # Java-based project management
+  # *** GO lang ***
   - go
-  - httpie
-  - jq
-  - jmeter
-  - maven
+  # *** Python ***
   - python
   - python3
-  - sqlite
-  - phantomjs
+  - pipenv # Python dependency management tool
+  # *** Javascript ***
+  - nvm # Manage multiple Node.js versions
+  - node # Node JS
+  - angular-cli # CLI tool for Angular
 # Shell Utilities 
-  - coreutils
-  - tree
-  - csshx
-  - fzf
-  - knock
-  - whatmask
-  - wget
-  - nmap
-  - ssh-copy-id
-  - openssl
-  - pandoc
-  - telenet
+  - mas # Mac App Store command-line interface
+  - git
+  - httpie # User-friendly cURL replacement (command-line HTTP client)
+  - jq # Lightweight and flexible command-line JSON processor
+  - sqlite # Command-line interface for SQLite
+  - coreutils # GNU File, Shell, and Text utilities
+  - tree # Display directories as trees 
+  - csshx # Cluster ssh tool for Terminal.app
+  - fzf # Command-line fuzzy finder written in Go
+  - whatmask # Network settings helper
+  - wget # Internet file retriever
+  - nmap # Port scanning utility
+  - ssh-copy-id # Add a public key to a remote machine's authorized_keys file
+  - openssl # OpenSSL GIO module for glib
+  - pandoc # Swiss-army knife of markup format conversion
+  - telnet # User interface to the TELNET protocol
+  - sshuttle # Proxy server that works as a poor man's VPN
+  - tldr # Simplified and community-driven man pages
+  - tmux # Terminal multiplexer
 # Cloud
-  - aws-iam-authenticator
-  - bat
-  - azure-cli
-  - eksctl
+  - aws-iam-authenticator # Use AWS IAM credentials to authenticate to Kubernetes
+  - bat # Clone of cat(1) with syntax highlighting and Git integration
+  - azure-cli # Microsoft Azure CLI 2.0
+  - eksctl # Simple command-line tool for creating clusters on Amazon EKS
 # DevOps
-  - kubernetes-cli
-  - kubernetes-helm
-  - terraform
+  - kubernetes-cli # Kubernetes command-line interface
+  - terraform # Tool to build, change, and version infrastructure
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
-  - homebrew/dupes
   - homebrew/versions
+  - adoptopenjdk/openjdk
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-# Messaging and co.
-  - slack
-  - skype-for-business
-  - station
+  - knock
+  - slack # Team communication and collaboration software
 # Browsers
-  - google-chrome
-  - firefox
+  # - google-chrome
+  - brave-browser
+  # - firefox
 # Utilities
-  - 1password
-  - vlc
-  - kap
+  - 1password # Password manager that keeps all passwords secure behind one password
+  - vlc # VLC media player
+  - kap # Open-source screen recorder built with web technology
   - spotify
-  - caffeine
-  - filezilla
-  #- cyberduck
-  - dropbox
-  - mas
-  - the-unarchiver
-  #- microsoft-office
-  #- licecap
+  - caffeine # Utility that prevents the system from going to sleep
+  # - filezilla
+  - cyberduck # browser FTP, SFTP, s3,...
+  - dropbox # Client for the Dropbox cloud storage service
+  - the-unarchiver # Unpacks archive files
   #- handbrake
 # DevOps tools
   - docker
   - vagrant
   - virtualbox
 # Dev environment
-  - java
-  - node
-  - sourcetree
-  - postman
-  - intellij-idea
+  - phantomjs
+  - adoptopenjdk8n #Java JDK
+  - adoptopenjdk11 #Java JDK
+  - sourcetree # Graphical client for Git version control
+  - postman # Collaboration platform for API development
+  # - intellij-idea
   - visual-studio-code
 # Databases
-  - sequel-pro
-  - postico
+  # - sequel-pro
+  - postico # GUI client for PostgreSQL databases
+  - tableplus # friendly GUI tool for relational databases
 # Quick look plugins
-  - qlcolorcode
-  - qlstephen
+  - qlcolorcode # Quick Look plug-in that renders source code with syntax highlighting
+  - qlstephen # A QuickLook plugin that lets you view plain text files without a file extension
   - qlmarkdown
   - quicklook-json
-  - qlprettypatch
+  #- qlprettypatch # QuickLook generator for patch files.
   - quicklook-csv
-  - betterzipql
-  - qlimagesize
-  - webpquicklook
+  #- qlimagesize #QuickLook plugin, it displays the dimensions, DPI and file size of an image in the title bar.
   - go2shell # Opens a terminal window to the current directory in Finder.
 
 # See `geerlingguy.mas` role documentation for usage instructions.
