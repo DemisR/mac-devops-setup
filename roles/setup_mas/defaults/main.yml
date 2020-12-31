@@ -3,6 +3,7 @@ mas_email: ""
 mas_password: ""
 
 mas_installed_app_ids:
-  - 425424353 # The Unarchiver
-
+  - 425424353 # The Unarchiver (4.2.2)
+  - 1362171212 # Caffeinated (1.18)
+  
 mas_upgrade_all_apps: no

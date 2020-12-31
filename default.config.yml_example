@@ -32,7 +32,7 @@ homebrew_installed_packages:
   - nvm # Manage multiple Node.js versions
   - node # Node JS
   - angular-cli # CLI tool for Angular
-# Shell Utilities 
+  # Shell Utilities 
   - mas # Mac App Store command-line interface
   - git
   - httpie # User-friendly cURL replacement (command-line HTTP client)
@@ -52,14 +52,14 @@ homebrew_installed_packages:
   - sshuttle # Proxy server that works as a poor man's VPN
   - tldr # Simplified and community-driven man pages
   - tmux # Terminal multiplexer
-# Cloud
-  - aws-iam-authenticator # Use AWS IAM credentials to authenticate to Kubernetes
   - bat # Clone of cat(1) with syntax highlighting and Git integration
-  - azure-cli # Microsoft Azure CLI 2.0
-  - eksctl # Simple command-line tool for creating clusters on Amazon EKS
+# Cloud
+  # - aws-iam-authenticator # Use AWS IAM credentials to authenticate to Kubernetes
+  # - azure-cli # Microsoft Azure CLI 2.0
+  # - eksctl # Simple command-line tool for creating clusters on Amazon EKS
 # DevOps
-  - kubernetes-cli # Kubernetes command-line interface
-  - terraform # Tool to build, change, and version infrastructure
+  # - kubernetes-cli # Kubernetes command-line interface
+  # - terraform # Tool to build, change, and version infrastructure
 
 homebrew_taps:
   - homebrew/core
@@ -80,7 +80,7 @@ homebrew_cask_apps:
   - vlc # VLC media player
   - kap # Open-source screen recorder built with web technology
   - spotify
-  - caffeine # Utility that prevents the system from going to sleep
+  # - caffeine # Utility that prevents the system from going to sleep
   # - filezilla
   - cyberduck # browser FTP, SFTP, s3,...
   - dropbox # Client for the Dropbox cloud storage service
@@ -114,10 +114,21 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
-  - 425955336 # Skitch
-  - 472226235 # LanScan
-  - 1295203466 # Microsoft Remote Desktop
-  - 1362171212 # Caffeinated
+  - 425424353 # The Unarchiver (4.2.2)
+  - 409183694 # Keynote (10.1)
+  - 408981434 # iMovie (10.1.15)
+  - 1199502670 # Teampaper Snap (2.3.0)
+  - 425955336 # Skitch (2.9)
+  - 472226235 # LanScan (6.5.1)
+  - 973213640 # MSG Viewer for Outlook (3.99.2)
+  - 1091189122 # Bear (1.7.15)
+  - 568494494 # Pocket (1.8.5)
+  - 409201541 # Pages (10.1)
+  - 1295203466 # Microsoft Remote Desktop (10.4.0)
+  - 513610341 # com.peacockmedia.integrity (9.8.5)
+  - 1176895641 # Spark (2.8.3)
+  - 1362171212 # Caffeinated (1.18)
+  - 409203825 # Numbers (10.1)
 
 #mas_email: ""
 #mas_password: ""

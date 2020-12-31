@@ -1,0 +1,162 @@
+---
+configure_terminal: yes
+configure_osx: yes
+configure_dotfiles: yes
+
+dotfiles_repo: https://github.com/DemisR/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/dotfiles
+dotfiles_files:
+  - .aliases
+  - .zshrc
+  - .gitconfig
+  - .gitignore_global
+  - .vimrc
+  - .vim
+  - .osx
+  - .functions
+
+homebrew_installed_packages:
+# Dev
+  # *** Java ***
+  - jenv # Manage your Java environment
+  - maven # Java-based project management
+  # *** GO lang ***
+  - go
+  # *** Python ***
+  - python
+  - python3
+  - pipenv # Python dependency management tool
+  # *** Javascript ***
+  - nvm # Manage multiple Node.js versions
+  - node # Node JS
+  # Shell Utilities 
+  - mas # Mac App Store command-line interface
+  - git
+  - httpie # User-friendly cURL replacement (command-line HTTP client)
+  - jq # Lightweight and flexible command-line JSON processor
+  - sqlite # Command-line interface for SQLite
+  - coreutils # GNU File, Shell, and Text utilities
+  - tree # Display directories as trees 
+  - csshx # Cluster ssh tool for Terminal.app
+  - fzf # Command-line fuzzy finder written in Go
+  - whatmask # Network settings helper
+  - wget # Internet file retriever
+  - nmap # Port scanning utility
+  - ssh-copy-id # Add a public key to a remote machine's authorized_keys file
+  - openssl # OpenSSL GIO module for glib
+  - pandoc # Swiss-army knife of markup format conversion
+  - telnet # User interface to the TELNET protocol
+  - sshuttle # Proxy server that works as a poor man's VPN
+  - tldr # Simplified and community-driven man pages
+  - tmux # Terminal multiplexer
+  - bat # Clone of cat(1) with syntax highlighting and Git integration
+
+
+homebrew_taps:
+  - homebrew/core
+  - caskroom/cask
+  - homebrew/versions
+  - adoptopenjdk/openjdk
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - kite
+  - knock
+  - slack # Team communication and collaboration software
+# Browsers
+  - brave-browser
+  - firefox-developer-edition
+# Utilities
+  - 1password # Password manager that keeps all passwords secure behind one password
+  - vlc # VLC media player
+  - kap # Open-source screen recorder built with web technology
+  - spotify
+  - cyberduck # browser FTP, SFTP, s3,...
+  - dropbox # Client for the Dropbox cloud storage service
+  - the-unarchiver # Unpacks archive files
+# DevOps tools
+  - docker
+  - vagrant
+  - virtualbox
+# Dev environment
+  - phantomjs
+  - adoptopenjdk8n #Java JDK
+  - adoptopenjdk11 #Java JDK
+  - sourcetree # Graphical client for Git version control
+  - postman # Collaboration platform for API development
+  - insomnia # postman alternative
+  - visual-studio-code
+  - open-in-code # Finder toolbar app to open current folder in Visual Studio Code
+# Databases
+  - postico # GUI client for PostgreSQL databases
+  - tableplus # friendly GUI tool for relational databases
+# Quick look plugins
+  - qlcolorcode # Quick Look plug-in that renders source code with syntax highlighting
+  - qlstephen # A QuickLook plugin that lets you view plain text files without a file extension
+  - qlmarkdown
+  - quicklook-json
+  - quicklook-csv
+  - go2shell # Opens a terminal window to the current directory in Finder.
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_app_ids:
+  - 425424353 # The Unarchiver (4.2.2)
+  - 409183694 # Keynote (10.1)
+  - 408981434 # iMovie (10.1.15)
+  - 1199502670 # Teampaper Snap (2.3.0)
+  - 425955336 # Skitch (2.9)
+  - 472226235 # LanScan (6.5.1)
+  - 973213640 # MSG Viewer for Outlook (3.99.2)
+  - 1091189122 # Bear (1.7.15)
+  - 568494494 # Pocket (1.8.5)
+  - 409201541 # Pages (10.1)
+  - 1295203466 # Microsoft Remote Desktop (10.4.0)
+  - 513610341 # com.peacockmedia.integrity (9.8.5)
+  - 1176895641 # Spark (2.8.3)
+  - 1362171212 # Caffeinated (1.18)
+  - 409203825 # Numbers (10.1)
+
+
+# Use settings sync for VScode
+# vscode_packages:
+#   - vscoss.vscode-ansible # Ansible 
+#   - shanoor.vscode-nginx # NGinx config
+#   - HookyQR.beautify # Beautify code
+#   - CoenraadS.bracket-pair-colorizer-2 # Colorizing matching brackets
+#   - eamodio.gitlens # Supercharge Git 
+#   - fatihacet.gitlab-workflow # Gitlab workflow integration
+#   - akamud.vscode-theme-onedark # Theme
+#   - file-icons.file-icons #Icons
+#   - bmaupin.copy-without-formatting # Copy without formatting
+#   - caarlos0.language-prometheus # Syntax highlight and snippets for Prometheus'
+#   - christian-kohler.npm-intellisense # Autocomplete npm
+#   - christian-kohler.path-intellisense # Autocompletes filenames
+#   - DotJoshJohnson.xml # ML formatting
+#   - EditorConfig.EditorConfig # EditorConfig Support
+#   - eg2.vscode-npm-script # npm support
+#   - esbenp.prettier-vscode # Prettier 
+#   - formulahendry.code-runner # Run code from vscode
+#   - Gruntfuggly.todo-tree # Show Todo Fixme 
+#   - johnpapa.angular-essentials # Essential extensions for Angular developers
+#   - johnpapa.Angular2 # Angular
+#   - Mikael.Angular-BeastCode # Angular
+#   - natewallace.angular2-inline
+#   - mitchdenny.ecdc # Encode and decode text selections
+#   - ms-azuretools.vscode-docker # Linting for Dockerfile and docker-compose files
+#   - ms-kubernetes-tools.vscode-kubernetes-tools # Kubernetes
+#   - ms-python.python # Python
+#   - ms-vscode.vscode-typescript-tslint-plugin # TSLint support 
+#   - ms-vsliveshare.vsliveshare # Real-time collaborative development
+#   - msjsdiag.debugger-for-chrome # Debugger for Chrome
+#   - mtxr.sqltools # Database management
+#   - nhoizey.gremlins # Reveals some characters that can be harmful because they are invisible or looking like legitimate ones
+#   - quicktype.quicktype # Copy JSON, paste as Go, TypeScript, C#, C++ and more
+#   - redhat.vscode-yaml # Yaml language support
+#   - samuelcolvin.jinjahtml # Syntax highlighting for jinja
+#   - spywhere.guides # Guide lines
+#   - tht13.python # Python language
+#   - vilicvane.sensitive-replace # Sensitive replace
+#   - VisualStudioExptTeam.vscodeintellicode # AI-assisted development
+#   - wayou.vscode-todo-highlight # highlight TODOs, FIXMEs, and any keywords, annotation
+#   - yzane.markdown-pdf # Convert Markdown to PDF

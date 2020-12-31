@@ -5,5 +5,11 @@ dotfiles_repo_local_destination: "~/Documents/dotfiles"
 
 dotfiles_home: "~"
 dotfiles_files:
+  - .aliases
   - .zshrc
-
+  - .gitconfig
+  - .gitignore_global
+  - .vimrc
+  - .vim
+  - .osx
+  - .functions
