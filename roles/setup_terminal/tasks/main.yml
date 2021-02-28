@@ -22,7 +22,7 @@
   shell: ~/.config/powerlinefonts/install.sh 
   args: 
     chdir: '~/.config/powerlinefonts'
-  when: fontCloned|success
+  when: fontCloned
   become: no
 
 - name: iTerm custom settings file
@@ -45,8 +45,3 @@
     dest: "~/.oh-my-zsh"
     update: yes
   when: install_oh_my_zsh
-
-- name: Setting default shell
-  shell: "chsh -s $(which zsh) {{ ansible_ssh_user }}"
-  become: True
-  when: default_shell_zsh

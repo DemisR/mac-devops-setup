@@ -7,14 +7,7 @@ This ansible playbook install and setup most of softwares and utilities for my D
 First of all clone or download this repository on you mac.
 
 After that you need to do some things to install prerequisites.
-
-- Install Ansible
-- Ensure Apple's command line tools are installed
-- Clone this repository to your local drive
-- Updating OSX
-- Installing Xcode Command Line Tools
-
-More easily, you can simply run the [install.sh](install.sh) script which includes all commands for the installation prerequisites.
+You can simply run the [install.sh](install.sh) script which includes all commands for the installation prerequisites.
 
 _Note: If some Homebrew commands fail, you might need to agree to XCode's license or fix some other Brew issue. Run brew doctor to see if this is the case._
 
@@ -57,8 +50,6 @@ The complete list of softwares installed is in `default.config.yml` , but in sum
     Finder: show status bar
     Save screenshots in PNG format
     Save screenshots to the Desktop/Screenshots folder
-
-- Install VScode and plugins (check `vscode_packages` list )
 
 ## Improvements
 

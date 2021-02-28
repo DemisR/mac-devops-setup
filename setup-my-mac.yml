@@ -22,4 +22,3 @@
       when: configure_terminal
     - role: setup_macos
       when: configure_osx
-    - role: setup_ide
