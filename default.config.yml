@@ -28,7 +28,7 @@ homebrew_installed_packages:
   - python3
   - pipenv # Python dependency management tool
   # *** Javascript ***
-  - nvm # Manage multiple Node.js versions
+  - volta # Manage multiple Node.js versions (replace nvm)
   - node # Node JS
   # Shell Utilities 
   - mas # Mac App Store command-line interface
@@ -51,6 +51,7 @@ homebrew_installed_packages:
   - tldr # Simplified and community-driven man pages
   - tmux # Terminal multiplexer
   - bat # Clone of cat(1) with syntax highlighting and Git integration
+  - awscli # AWS CLI
 
 
 homebrew_taps:
@@ -97,19 +98,19 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
-  - 425424353 # The Unarchiver (4.2.2)
-  - 409183694 # Keynote (10.1)
-  - 408981434 # iMovie (10.1.15)
-  - 1199502670 # Teampaper Snap (2.3.0)
-  - 425955336 # Skitch (2.9)
-  - 472226235 # LanScan (6.5.1)
-  - 973213640 # MSG Viewer for Outlook (3.99.2)
-  - 1091189122 # Bear (1.7.15)
-  - 568494494 # Pocket (1.8.5)
-  - 409201541 # Pages (10.1)
-  - 1295203466 # Microsoft Remote Desktop (10.4.0)
-  - 513610341 # com.peacockmedia.integrity (9.8.5)
-  -  1176895641 # Spark (2.8.3)
-  - 1362171212 # Caffeinated (1.18)
-  - 409203825 # Numbers (10.1)
-    # 1password
+  - 425424353 # The Unarchiver
+  - 937984704 # Amphetamine
+  - 1199502670 # Teampaper Snap
+  - 425955336 # Skitch
+  - 472226235 # LanScan
+  - 973213640 # MSG Viewer for Outlook
+  - 1091189122 # Bear
+  - 568494494 # Pocket
+  - 409201541 # Pages
+  - 409183694 # Keynote
+  - 409203825 # Numbers
+  - 1295203466 # Microsoft Remote Desktop
+  - 513610341 # com.peacockmedia.integrity
+  - 1176895641 # Spark Email App by Readdle
+  - 1333542190 # 1password
+  - 803453959 # Slack
