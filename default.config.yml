@@ -52,6 +52,7 @@ homebrew_installed_packages:
   - tmux # Terminal multiplexer
   - bat # Clone of cat(1) with syntax highlighting and Git integration
   - awscli # AWS CLI
+  - ripgrep # Search tool like grep but much faster
 
 
 homebrew_taps:
