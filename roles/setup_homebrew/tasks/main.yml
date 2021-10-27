@@ -80,16 +80,14 @@
 # Tap.
   - name: Ensure configured taps are tapped.
     homebrew_tap:
-      tap: '{{ item.name | default(item) }}'
-      url: '{{ item.url | default(omit) }}'
+      tap: '{{ item }}'
       state: present
     loop: "{{ homebrew_taps }}"
 
 # Brew.
   - name: Ensure configured homebrew packages are installed ( This step will take a while depending on number of brews to install )
     homebrew:
-      name: "{{ item.name | default(item) }}"
-      install_options: "{{ item.install_options | default(omit) }}"
+      name: "{{ item }}"
       state: present
     loop: "{{ homebrew_installed_packages }}"
 
@@ -102,9 +100,9 @@
 # Cask.
 - name: Install configured cask applications.
   homebrew_cask:
-    name: "{{ item.name | default(item) }}"
+    name: "{{ item }}"
     state: present
-    install_options: "{{ item.install_options | default('appdir=' + homebrew_cask_appdir) }}"
+    install_options: "appdir={{ homebrew_cask_appdir }}"
   loop: "{{ homebrew_cask_apps }}"
 
 - name: Check for Brewfile.
