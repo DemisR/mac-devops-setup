@@ -30,14 +30,14 @@ homebrew_installed_packages:
   # *** Javascript ***
   - volta # Manage multiple Node.js versions (replace nvm)
   - node # Node JS
-  # Shell Utilities 
+  # Shell Utilities
   - mas # Mac App Store command-line interface
   - git
   - httpie # User-friendly cURL replacement (command-line HTTP client)
   - jq # Lightweight and flexible command-line JSON processor
   - sqlite # Command-line interface for SQLite
   - coreutils # GNU File, Shell, and Text utilities
-  - tree # Display directories as trees 
+  - tree # Display directories as trees
   - csshx # Cluster ssh tool for Terminal.app
   - fzf # Command-line fuzzy finder written in Go
   - whatmask # Network settings helper
