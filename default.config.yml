@@ -53,11 +53,17 @@ homebrew_installed_packages:
   - bat # Clone of cat(1) with syntax highlighting and Git integration
   - awscli # AWS CLI
   - ripgrep # Search tool like grep but much faster
+  - helm
+  - minikube
+  - terraform
+  - terraform-docs
+  - terraformer
 
 
 homebrew_taps:
   - homebrew/core
   - adoptopenjdk/openjdk
+  - hashicorp/tap
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -71,17 +77,16 @@ homebrew_cask_apps:
   - kap # Open-source screen recorder built with web technology
   - spotify
   - cyberduck # browser FTP, SFTP, s3,...
-  - dropbox # Client for the Dropbox cloud storage service
   - the-unarchiver # Unpacks archive files
 # DevOps tools
   - docker
   - vagrant
   - virtualbox
+  - hashicorp/tap/terraform
 # Dev environment
   - phantomjs
   - adoptopenjdk8 #Java JDK
   - adoptopenjdk11 #Java JDK
-  - sourcetree # Graphical client for Git version control
   - postman # Collaboration platform for API development
   - insomnia # postman alternative
   - visual-studio-code
@@ -99,9 +104,7 @@ homebrew_cask_apps:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
-  - 425424353 # The Unarchiver
   - 937984704 # Amphetamine
-  - 1199502670 # Teampaper Snap
   - 425955336 # Skitch
   - 472226235 # LanScan
   - 973213640 # MSG Viewer for Outlook
@@ -112,8 +115,6 @@ mas_installed_app_ids:
   - 409203825 # Numbers
   - 1295203466 # Microsoft Remote Desktop
   - 513610341 # com.peacockmedia.integrity
-  - 1176895641 # Spark Email App by Readdle
   - 1333542190 # 1password
   - 803453959 # Slack
-  - 1510445899 # Meeter
-  - 1509590766 # MuteKey
+
