@@ -4,40 +4,54 @@
     name: "iterm2"
     state: present
     install_options: "appdir={{ homebrew_cask_appdir }}"
-    
+
 - name: Get current Solarized package
-  get_url: 
-    url: "http://ethanschoonover.com/solarized/files/solarized.zip" 
+  get_url:
+    url: "http://ethanschoonover.com/solarized/files/solarized.zip"
     dest: "~/Downloads/"
 
-- name: Cloning fonts
-  git:
-    repo: "https://github.com/powerline/fonts"
-    dest: "~/.config/powerlinefonts"
-    accept_hostkey: yes
-  register: fontCloned
-  become: no
+# - name: Installing zsh package
+#   homebrew:
+#     name: "{{ item }}"
+#     state: present
+#   with_items:
+#     - zsh
 
-- name: Install Fonts
-  shell: ~/.config/powerlinefonts/install.sh 
-  args: 
-    chdir: '~/.config/powerlinefonts'
-  when: fontCloned
-  become: no
+##========================================================================================
+##                                                                                      ##
+##                                       Agnoster                                       ##
+##                                                                                      ##
+##========================================================================================
 
-- name: iTerm custom settings file
-  osx_defaults:
-    domain: com.googlecode.iterm2
-    key: PrefsCustomFolder
-    type: string
-    value: "{{ ansible_env.PWD }}/roles/setup_terminal/files"
 
-- name: Installing zsh package
-  homebrew:
-    name: "{{ item }}"
-    state: present
-  with_items:
-    - zsh
+# - name: Cloning fonts
+#   git:
+#     repo: "https://github.com/powerline/fonts"
+#     dest: "~/.config/powerlinefonts"
+#     accept_hostkey: yes
+#   register: fontCloned
+#   become: no
+
+# - name: Install Fonts
+#   shell: ~/.config/powerlinefonts/install.sh 
+#   args: 
+#     chdir: '~/.config/powerlinefonts'
+#   when: fontCloned
+#   become: no
+
+# - name: iTerm custom settings file
+#   osx_defaults:
+#     domain: com.googlecode.iterm2
+#     key: PrefsCustomFolder
+#     type: string
+#     value: "{{ ansible_env.PWD }}/roles/setup_terminal/files"
+
+##========================================================================================
+##                                                                                      ##
+##                                       oh-my-zsh                                      ##
+##                                                                                      ##
+##========================================================================================
+
 
 - name: Installing oh-my-zsh
   git:
@@ -45,3 +59,15 @@
     dest: "~/.oh-my-zsh"
     update: yes
   when: install_oh_my_zsh
+
+##========================================================================================
+##                                                                                      ##
+##                                     powerlevel10k                                    ##
+##                                                                                      ##
+##========================================================================================
+
+
+- name: Enable powerlevel10k
+  lineinfile:
+      path: "~/.zshrc"
+      line: "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"

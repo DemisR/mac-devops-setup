@@ -17,7 +17,7 @@ dotfiles_files:
   - .functions
 
 homebrew_installed_packages:
-# Dev
+  # Dev
   # *** Java ***
   - jenv # Manage your Java environment
   - maven # Java-based project management
@@ -59,7 +59,6 @@ homebrew_installed_packages:
   - terraform-docs
   - terraformer
 
-
 homebrew_taps:
   - homebrew/core
   - adoptopenjdk/openjdk
@@ -69,38 +68,45 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - kite
   - slack # Team communication and collaboration software
-  - notion
-# Browsers
+  - obsidian # Knowledge base that works on top of a local folder of plain text Markdown files
+  - coconutbattery # Tool to show live information about the batteries in various devices
+  - monitorcontrol # Tool to control external monitor brightness & volume
+  - raindropio # All-in-one bookmark manager
+  # Browsers
   - brave-browser
-# Utilities
+  # Utilities
   - vlc # VLC media player
   - kap # Open-source screen recorder built with web technology
   - spotify
   - cyberduck # browser FTP, SFTP, s3,...
   - the-unarchiver # Unpacks archive files
-# DevOps tools
+  - shottr # Screenshot measurement and annotation tool
+  # DevOps tools
   - docker
   - vagrant
   - virtualbox
   - hashicorp/tap/terraform
-# Dev environment
+  - lens # Kubernetes IDE
+  # Dev environment
   - phantomjs
-  - adoptopenjdk8 #Java JDK
-  - adoptopenjdk11 #Java JDK
+  - temurin8 #Java JDK from the Eclipse Foundation (Adoptium)
+  - temurin11 #Java JDK from the Eclipse Foundation (Adoptium)
   - postman # Collaboration platform for API development
   - insomnia # postman alternative
   - visual-studio-code
   - open-in-code # Finder toolbar app to open current folder in Visual Studio Code
-# Databases
+  # Databases
   - postico # GUI client for PostgreSQL databases
   - tableplus # friendly GUI tool for relational databases
-# Quick look plugins
+  # Quick look plugins
   - qlcolorcode # Quick Look plug-in that renders source code with syntax highlighting
   - qlstephen # A QuickLook plugin that lets you view plain text files without a file extension
   - qlmarkdown
   - quicklook-json
   - quicklook-csv
-  - go2shell # Opens a terminal window to the current directory in Finder.
+  - go2shell # Opens a terminal window to the current directory in Finder
+  # CLI
+  - romkatv/powerlevel10k/powerlevel10k
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
@@ -108,13 +114,10 @@ mas_installed_app_ids:
   - 425955336 # Skitch
   - 472226235 # LanScan
   - 973213640 # MSG Viewer for Outlook
-  - 1091189122 # Bear
-  - 568494494 # Pocket
   - 409201541 # Pages
   - 409183694 # Keynote
   - 409203825 # Numbers
   - 1295203466 # Microsoft Remote Desktop
   - 513610341 # com.peacockmedia.integrity
   - 1333542190 # 1password
-  - 803453959 # Slack
 
