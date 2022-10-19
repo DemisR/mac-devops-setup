@@ -24,27 +24,27 @@
 ##========================================================================================
 
 
-# - name: Cloning fonts
-#   git:
-#     repo: "https://github.com/powerline/fonts"
-#     dest: "~/.config/powerlinefonts"
-#     accept_hostkey: yes
-#   register: fontCloned
-#   become: no
+- name: Cloning fonts
+  git:
+    repo: "https://github.com/powerline/fonts"
+    dest: "~/.config/powerlinefonts"
+    accept_hostkey: yes
+  register: fontCloned
+  become: no
 
-# - name: Install Fonts
-#   shell: ~/.config/powerlinefonts/install.sh 
-#   args: 
-#     chdir: '~/.config/powerlinefonts'
-#   when: fontCloned
-#   become: no
+- name: Install Fonts
+  shell: ~/.config/powerlinefonts/install.sh 
+  args: 
+    chdir: '~/.config/powerlinefonts'
+  when: fontCloned
+  become: no
 
-# - name: iTerm custom settings file
-#   osx_defaults:
-#     domain: com.googlecode.iterm2
-#     key: PrefsCustomFolder
-#     type: string
-#     value: "{{ ansible_env.PWD }}/roles/setup_terminal/files"
+- name: iTerm custom settings file
+  osx_defaults:
+    domain: com.googlecode.iterm2
+    key: PrefsCustomFolder
+    type: string
+    value: "{{ ansible_env.PWD }}/roles/setup_terminal/files"
 
 ##========================================================================================
 ##                                                                                      ##
