@@ -69,5 +69,5 @@
 
 - name: Enable powerlevel10k
   lineinfile:
-      path: "~/.zshrc"
-      line: "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
+    path: "~/.zshrc"
+    line: "source $(brew --prefix)/opt/powerlevel10k/powerlevel10k.zsh-theme"
