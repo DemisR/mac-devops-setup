@@ -66,6 +66,10 @@
 ##                                                                                      ##
 ##========================================================================================
 
+- name: Install powerlevel10k
+  homebrew:
+    name: "romkatv/powerlevel10k/powerlevel10k"
+    state: present
 
 - name: Enable powerlevel10k
   lineinfile:
