@@ -1,3 +1,5 @@
+<img src="mac-devops-setup.png" width="200"  alt="Mac DevOps setup" />
+
 # 💻 DevOps Mac OS automated setup
 
 This Ansible playbook installs and sets up most of the software and utilities for my DevOps environment.
