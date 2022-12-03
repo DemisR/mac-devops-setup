@@ -1,4 +1,4 @@
-<p style="text-align:center;"><img src="mac-devops-setup.png" width="200" alt="Mac DevOps setup" /></p>
+<p align="center"><img src="mac-devops-setup.png" width="200" alt="Mac DevOps setup" /></p>
 
 # 💻 DevOps Mac OS automated setup
 
