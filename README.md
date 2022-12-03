@@ -26,9 +26,9 @@ and just run the following command at the root of this project and enter your ac
 ansible-playbook setup-my-mac.yml -i inventory -K
 ```
 
-## ✨What this playbook do
+## ✨What does this playbook do?
 
-The complete list of software installed is in `default.config.yml` , but in summary, here is what the playbook does.
+The complete list of software that the playbook is going to install is in `default.config.yml` , but in summary, here is what the playbook does.
 
 - Install homebrew and cask and install applications, utilities and QuickLook plugins.
   (e.g. Docker, Terraform, Kubectl, slack, 1password, postman,...)
