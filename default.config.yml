@@ -26,7 +26,7 @@ homebrew_installed_packages:
   # *** Python ***
   - python
   - python3
-  - pipenv # Python dependency management tool
+  - poetry # Python package management tool
   # *** Javascript ***
   - volta # Manage multiple Node.js versions (replace nvm)
   - node # Node JS
@@ -54,15 +54,15 @@ homebrew_installed_packages:
   - awscli # AWS CLI
   - ripgrep # Search tool like grep but much faster
   - helm
-  - minikube
+  - minikube # Run a Kubernetes cluster locally
   - terraform
   - terraform-docs
   - terraformer
 
 homebrew_taps:
   - homebrew/core
-  - adoptopenjdk/openjdk
   - hashicorp/tap
+  - homebrew/cask-versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
@@ -83,14 +83,14 @@ homebrew_cask_apps:
   - shottr # Screenshot measurement and annotation tool
   # DevOps tools
   - docker
-  - vagrant
-  - virtualbox
+  #- vagrant # Not working on Mac M series
+  #- virtualbox # Not working on Mac M series
   - hashicorp/tap/terraform
   - lens # Kubernetes IDE
   # Dev environment
   - phantomjs
-  - temurin8 #Java JDK from the Eclipse Foundation (Adoptium)
-  - temurin11 #Java JDK from the Eclipse Foundation (Adoptium)
+  - temurin8 # Java JDK from the Eclipse Foundation (Adoptium)
+  - temurin11 # Java JDK from the Eclipse Foundation (Adoptium)
   - postman # Collaboration platform for API development
   - insomnia # postman alternative
   - visual-studio-code
@@ -101,9 +101,9 @@ homebrew_cask_apps:
   # Quick look plugins
   - qlcolorcode # Quick Look plug-in that renders source code with syntax highlighting
   - qlstephen # A QuickLook plugin that lets you view plain text files without a file extension
-  - qlmarkdown
-  - quicklook-json
-  - quicklook-csv
+  - qlmarkdown # QuickLook generator for Markdown files
+  - quicklook-json # QuickLook plugin for JSON files
+  - quicklook-csv # QuickLook plugin for CSV files
   - go2shell # Opens a terminal window to the current directory in Finder
   # CLI
   - romkatv/powerlevel10k/powerlevel10k
